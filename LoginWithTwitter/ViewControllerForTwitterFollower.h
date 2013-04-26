@@ -18,6 +18,7 @@
 }
 @property (nonatomic, strong) IBOutlet UITableView *TwitterFollowerListTableView;
 @property (strong, nonatomic) NSArray *TwitterArray;
+@property (nonatomic,strong) IBOutlet UILabel *titleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil Friend_type:(NSString*)type;
 

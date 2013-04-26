@@ -16,6 +16,7 @@
 @implementation ViewControllerForTwitterFollower
 @synthesize TwitterArray;
 @synthesize TwitterFollowerListTableView;
+@synthesize titleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil Friend_type:(NSString*)type
 {
@@ -23,6 +24,7 @@
     if (self) {
         // Custom initialization
         FriendType=type;
+        self.title=FriendType;
 
     }
     return self;
@@ -33,7 +35,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.navigationController.navigationBar setHidden:YES];
-
+    titleLabel.text=FriendType;
+    
     if ([FriendType isEqualToString:@"Followers"])
     {
         [self gettwitterFollwers];
@@ -215,8 +218,11 @@
     
     // Configure the cell...
 
-    [cell.textLabel setFont:[UIFont fontWithName:@"Arial" size:16.0f]];
     
+    NSDictionary *userDict = [TwitterArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [userDict objectForKey:@"name"];
+    [cell.textLabel setFont:[UIFont fontWithName:@"Arial" size:16.0f]];
+
     return cell;
 }
 
