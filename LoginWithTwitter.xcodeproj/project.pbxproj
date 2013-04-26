@@ -27,6 +27,13 @@
 		2B42EAB0172A84C0007B9809 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B42EAAF172A84C0007B9809 /* Accounts.framework */; };
 		2B42EAB2172A84CE007B9809 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B42EAB1172A84CE007B9809 /* Social.framework */; };
 		2B42EAB4172A84D6007B9809 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B42EAB3172A84D6007B9809 /* Security.framework */; };
+		2B42EAD7172AACAF007B9809 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EAC8172AACAF007B9809 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B42EAD8172AACAF007B9809 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EACC172AACAF007B9809 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B42EAD9172AACAF007B9809 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EACE172AACAF007B9809 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B42EADA172AACAF007B9809 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EAD0172AACAF007B9809 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B42EADB172AACAF007B9809 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EAD2172AACAF007B9809 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B42EADC172AACAF007B9809 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EAD4172AACAF007B9809 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B42EADD172AACAF007B9809 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42EAD6172AACAF007B9809 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +64,21 @@
 		2B42EAAF172A84C0007B9809 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		2B42EAB1172A84CE007B9809 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2B42EAB3172A84D6007B9809 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2B42EAC8172AACAF007B9809 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		2B42EAC9172AACAF007B9809 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		2B42EACA172AACAF007B9809 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		2B42EACB172AACAF007B9809 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		2B42EACC172AACAF007B9809 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		2B42EACD172AACAF007B9809 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		2B42EACE172AACAF007B9809 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		2B42EACF172AACAF007B9809 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		2B42EAD0172AACAF007B9809 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		2B42EAD1172AACAF007B9809 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		2B42EAD2172AACAF007B9809 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		2B42EAD3172AACAF007B9809 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2B42EAD4172AACAF007B9809 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2B42EAD5172AACAF007B9809 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2B42EAD6172AACAF007B9809 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +131,7 @@
 		2B42EA7E172A7A39007B9809 /* LoginWithTwitter */ = {
 			isa = PBXGroup;
 			children = (
+				2B42EAC7172AAC9F007B9809 /* JSON */,
 				2B42EA87172A7A3A007B9809 /* AppDelegate.h */,
 				2B42EA88172A7A3A007B9809 /* AppDelegate.m */,
 				2B42EAA0172A7A95007B9809 /* ViewControllerForTwitterLogin.h */,
@@ -139,6 +162,28 @@
 				2B42EA8C172A7A3A007B9809 /* Default@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B42EAC7172AAC9F007B9809 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2B42EAC8172AACAF007B9809 /* JSONKit.m */,
+				2B42EAC9172AACAF007B9809 /* JSONKit.h */,
+				2B42EACA172AACAF007B9809 /* JSON.h */,
+				2B42EACB172AACAF007B9809 /* NSObject+SBJSON.h */,
+				2B42EACC172AACAF007B9809 /* NSObject+SBJSON.m */,
+				2B42EACD172AACAF007B9809 /* NSString+SBJSON.h */,
+				2B42EACE172AACAF007B9809 /* NSString+SBJSON.m */,
+				2B42EACF172AACAF007B9809 /* SBJSON.h */,
+				2B42EAD0172AACAF007B9809 /* SBJSON.m */,
+				2B42EAD1172AACAF007B9809 /* SBJsonBase.h */,
+				2B42EAD2172AACAF007B9809 /* SBJsonBase.m */,
+				2B42EAD3172AACAF007B9809 /* SBJsonParser.h */,
+				2B42EAD4172AACAF007B9809 /* SBJsonParser.m */,
+				2B42EAD5172AACAF007B9809 /* SBJsonWriter.h */,
+				2B42EAD6172AACAF007B9809 /* SBJsonWriter.m */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +261,13 @@
 				2B42EAA3172A7A95007B9809 /* ViewControllerForTwitterLogin.m in Sources */,
 				2B42EAA8172A7AB0007B9809 /* ViewControllerForHomeScreen.m in Sources */,
 				2B42EAAD172A7ACA007B9809 /* ViewControllerForTwitterFollower.m in Sources */,
+				2B42EAD7172AACAF007B9809 /* JSONKit.m in Sources */,
+				2B42EAD8172AACAF007B9809 /* NSObject+SBJSON.m in Sources */,
+				2B42EAD9172AACAF007B9809 /* NSString+SBJSON.m in Sources */,
+				2B42EADA172AACAF007B9809 /* SBJSON.m in Sources */,
+				2B42EADB172AACAF007B9809 /* SBJsonBase.m in Sources */,
+				2B42EADC172AACAF007B9809 /* SBJsonParser.m in Sources */,
+				2B42EADD172AACAF007B9809 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +376,7 @@
 				2B42EA94172A7A3A007B9809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewControllerForTwitterFollower.h"
+#import "SBJSON.h"
 
 @interface ViewControllerForTwitterFollower ()
 
@@ -100,14 +101,16 @@
                         // Check if there is some response data
                         
                         if (responseData) {
+                                                        
+                            NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSASCIIStringEncoding];
                             
-                            TwitterArray=nil;
-                            NSError *error = nil;
-                            TwitterArray = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
+                            SBJSON * js = [[SBJSON alloc] init];
+                            //NSLog(@"json: %@",jsonString);
+                            TwitterArray = [[NSMutableArray alloc] initWithArray:[[js objectWithString:jsonString] objectForKey:@"users"]];
                             
-                            NSLog(@"==================>Follower array%@",TwitterArray);
-                            
-                            
+                            NSLog(@"++++++++++++++++++++++++>FriendsArray%@",TwitterArray);
+                            [TwitterFollowerListTableView reloadData];
+
                         }
                     });
                 }];
@@ -166,12 +169,14 @@
                         
                         if (responseData)
                         {
-                            
-                            NSError *error = nil;
-                            TwitterArray=nil;
-                            TwitterArray= [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
-                            
-                           NSLog(@"++++++++++++++++++++++++>FriendsArray%@",TwitterArray);
+                                                        
+                            NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSASCIIStringEncoding];
+
+                            SBJSON * js = [[SBJSON alloc] init];
+                            //NSLog(@"json: %@",jsonString);
+                            TwitterArray = [[NSMutableArray alloc] initWithArray:[[js objectWithString:jsonString] objectForKey:@"users"]];
+
+                            NSLog(@"++++++++++++++++++++++++>FriendsArray%@",TwitterArray);
                             [TwitterFollowerListTableView reloadData];
                             
                             
@@ -210,7 +215,6 @@
     
     // Configure the cell...
 
-    cell.textLabel.text = [[(NSDictionary *)TwitterArray objectForKey:@"name"] objectAtIndex:indexPath.row];
     [cell.textLabel setFont:[UIFont fontWithName:@"Arial" size:16.0f]];
     
     return cell;
